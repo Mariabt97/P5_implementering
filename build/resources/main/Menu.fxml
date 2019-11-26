@@ -35,6 +35,32 @@
       
       <Pane prefHeight="79.0" prefWidth="600.0" style="-fx-border-color: black;">
          <children>
+            <Button fx:id="buttonCloseSearch" styleClass="buttonSearchClose">
+                <graphic>
+                    <FontAwesomeIconView styleClass="buttonSearchCloseIcon" />
+                </graphic>
+            </Button>
+            <CustomTextField styleClass="searchField">
+                <left>
+                    <Label styleClass="searchBoxLabel">
+                        <graphic>
+                            <FontAwesomeIconView styleClass="searchBoxLabelIcon" />
+                        </graphic>
+                    </Label>
+                </left>
+            </CustomTextField>
+            <Button fx:id="buttonUpSearch" styleClass="buttonUpSearch">
+                <graphic>
+                    <FontAwesomeIconView styleClass="buttonSearchUpIcon" />
+                </graphic>
+            </Button>
+            <Button fx:id="buttonDownSearch" styleClass="buttonDownSearch">
+                <graphic>
+                    <FontAwesomeIconView styleClass="buttonSearchDownIcon" />
+                </graphic>
+            </Button>
+        <Label text="1 of 2 matchs" />
+            
             <Text layoutX="77.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Forside">
                <font>
                   <Font size="36.0" />
