@@ -23,7 +23,7 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = ''
+mainClassName = 'dk.aau.address.App'
 version = '0.0.1'
 
 javafx {
