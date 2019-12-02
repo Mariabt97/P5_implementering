@@ -9,9 +9,8 @@ import dk.aau.address.view.MenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.SplitPane;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.BorderPane;  
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 public class App extends Application {
@@ -48,7 +47,6 @@ public class App extends Application {
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (IOException e) {
-            //Hvis der er fejl i programmet, køres:
             e.printStackTrace();
         }
     }
@@ -57,12 +55,12 @@ public class App extends Application {
      */
     public void showMenuOverview(){
         try{
-        // Load menu overview.
+        // Load person overview.
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(App.class.getResource("/Menu.fxml"));
-        SplitPane menuOverview = (SplitPane) loader.load(); //Muligvis noget borderpane eller anchorpane...
+        AnchorPane menuOverview = (AnchorPane) loader.load();
         
-        // Set menu overview into the center of root layout.
+        // Set person overview into the center of root layout.
         rootLayout.setCenter(menuOverview);
 
         // Give the controller access to the main app.
